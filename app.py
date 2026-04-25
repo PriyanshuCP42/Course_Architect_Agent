@@ -632,7 +632,10 @@ if run_button:
                 st.session_state.course      = result
                 st.session_state.is_complete = True
             except Exception as e:
+                from agents import GROQ_API_KEY as _key
+                masked = f"{_key[:8]}...{_key[-4:]}" if _key and len(_key) > 12 else f"'{_key}'"
                 st.error(f"Something went wrong. Please check your API key and try again. ({str(e)})")
+                st.info(f"🔑 Debug: Key loaded = {masked} | Length = {len(_key) if _key else 0}")
             finally:
                 st.session_state.is_running = False
 

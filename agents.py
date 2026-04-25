@@ -9,9 +9,13 @@ load_dotenv()
 # Try Streamlit secrets first (cloud), then .env (local)
 try:
     import streamlit as st
-    GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", os.getenv("GROQ_API_KEY"))
+    GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", None) or os.getenv("GROQ_API_KEY")
 except Exception:
     GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+# Clean the key — strip whitespace/newlines that TOML text areas can introduce
+if GROQ_API_KEY:
+    GROQ_API_KEY = GROQ_API_KEY.strip().replace("\n", "").replace("\r", "").replace(" ", "")
 
 MODEL        = "llama-3.1-8b-instant"
 client       = Groq(api_key=GROQ_API_KEY) if GROQ_API_KEY else None
