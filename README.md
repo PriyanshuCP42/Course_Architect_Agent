@@ -8,11 +8,11 @@
 
 **Turn fragmented notes into pedagogically sound, production-ready course architectures in seconds.**
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.56-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Groq](https://img.shields.io/badge/Groq-Inference-F55036?style=for-the-badge&logo=groq&logoColor=white)](https://groq.com/)
-[![Meta Llama 3.1](https://img.shields.io/badge/Llama_3.1-8B-0467DF?style=for-the-badge&logo=meta&logoColor=white)](https://llama.meta.com/)
-[![FPDF2](https://img.shields.io/badge/PDF-Export-00599C?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/py-pdf/fpdf2)
+[![Python](https://img.shields.io/badge/PYTHON-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/STREAMLIT-1.56-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Groq](https://img.shields.io/badge/GROQ-INFERENCE-F55036?style=flat-square)](https://groq.com/)
+[![Meta Llama 3.1](https://img.shields.io/badge/LLAMA_3.1-8B-0467DF?style=flat-square&logo=meta&logoColor=white)](https://llama.meta.com/)
+[![PDF Export](https://img.shields.io/badge/PDF-EXPORT-00599C?style=flat-square)](https://github.com/py-pdf/fpdf2)
 
 ---
 
