@@ -8,11 +8,11 @@
 
 **Turn fragmented notes into pedagogically sound, production-ready course architectures in seconds.**
 
-[![Python](https://img.shields.io/badge/PYTHON-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/STREAMLIT-1.56-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Groq](https://img.shields.io/badge/GROQ-INFERENCE-F55036?style=flat-square)](https://groq.com/)
-[![Meta Llama 3.1](https://img.shields.io/badge/LLAMA_3.1-8B-0467DF?style=flat-square&logo=meta&logoColor=white)](https://llama.meta.com/)
-[![PDF Export](https://img.shields.io/badge/PDF-EXPORT-00599C?style=flat-square)](https://github.com/py-pdf/fpdf2)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=plastic&logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=plastic&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Groq](https://img.shields.io/badge/Groq-Inference-F55036?style=plastic)](https://groq.com/)
+[![Meta Llama 3.1](https://img.shields.io/badge/Llama_3.1-8B-0467DF?style=plastic&logo=meta&logoColor=white)](https://llama.meta.com/)
+[![PDF Export](https://img.shields.io/badge/PDF-Export-00599C?style=plastic)](https://github.com/py-pdf/fpdf2)
 
 ---
 
@@ -146,11 +146,11 @@ Course_Architect_Agent/
 ## 🛠️ Technology Stack
 
 <p align="left">
-  <img src="https://img.shields.io/badge/PYTHON-3.9+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/STREAMLIT-1.56-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"/>
-  <img src="https://img.shields.io/badge/GROQ-INFERENCE-F55036?style=flat-square" alt="Groq"/>
-  <img src="https://img.shields.io/badge/LLAMA_3.1-8B-0467DF?style=flat-square&logo=meta&logoColor=white" alt="Llama 3.1"/>
-  <img src="https://img.shields.io/badge/PDF-EXPORT-00599C?style=flat-square" alt="PDF Export"/>
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=plastic&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Streamlit-App-FF4B4B?style=plastic&logo=streamlit&logoColor=white" alt="Streamlit"/>
+  <img src="https://img.shields.io/badge/Groq-Inference-F55036?style=plastic" alt="Groq"/>
+  <img src="https://img.shields.io/badge/Llama_3.1-8B-0467DF?style=plastic&logo=meta&logoColor=white" alt="Llama 3.1"/>
+  <img src="https://img.shields.io/badge/PDF-Export-00599C?style=plastic" alt="PDF Export"/>
 </p>
 
 - **Inference Engine:** Sub-second response times using Groq's LPU architecture.
