@@ -1,0 +1,105 @@
+{
+  "curriculum": {
+    "course_title": "Core Concepts Course",
+    "course_subtitle": "A structured introduction to the key concepts",
+    "target_audience": "Learners new to this topic",
+    "difficulty_level": "Beginner",
+    "total_weeks": 2,
+    "total_hours": 6,
+    "prerequisites": [
+      "None"
+    ],
+    "course_outcomes": [
+      "Understand the core concepts"
+    ],
+    "modules": [
+      {
+        "module_id": "M1",
+        "title": "Introduction",
+        "week": 1,
+        "duration_days": 5,
+        "module_goal": "Establish foundational understanding",
+        "learning_objectives": [
+          "Explain the core concept"
+        ],
+        "lessons": [
+          {
+            "lesson_id": "M1L1",
+            "title": "Getting Started",
+            "duration_minutes": 30,
+            "lesson_type": "concept",
+            "description": "Introduction to the main topic.",
+            "content": {
+              "introduction": "Welcome to Getting Started.",
+              "core_explanation": "This lesson covers Introduction to the main topic..",
+              "key_points": [
+                "Key concept 1",
+                "Key concept 2",
+                "Key concept 3"
+              ],
+              "real_world_application": "Applied in real-world scenarios daily.",
+              "summary": "You have completed Getting Started."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "assessments": {
+    "module_assessments": [
+      {
+        "module_id": "M1",
+        "module_title": "Introduction",
+        "mcq": [],
+        "short_answer": [],
+        "scenario": null
+      }
+    ],
+    "final_exam": {
+      "exam_title": "Final Course Exam",
+      "mcq": [],
+      "short_answer": [],
+      "capstone_question": null
+    },
+    "total_questions": 0
+  },
+  "projects": [
+    {
+      "project_id": "P1",
+      "title": "Applied Core Concepts Course Project",
+      "tagline": "Apply course concepts to a real-world problem.",
+      "assigned_week": 2,
+      "duration_days": 5,
+      "difficulty": "Guided",
+      "problem_statement": "Apply what you have learned in a practical context.",
+      "deliverables": [
+        {
+          "deliverable_id": "D1",
+          "title": "Project Submission",
+          "description": "Complete the assigned project.",
+          "acceptance_criteria": [
+            "Submission is complete"
+          ]
+        }
+      ],
+      "technical_requirements": [
+        "Use course tools and techniques"
+      ],
+      "tools_and_technologies": [
+        "Course tools"
+      ],
+      "evaluation_rubric": [
+        {
+          "criterion": "Completeness",
+          "points": 100,
+          "excellent": "All requirements met",
+          "satisfactory": "Most requirements met",
+          "needs_work": "Requirements not met"
+        }
+      ],
+      "total_points": 100,
+      "stretch_goals": [],
+      "submission_format": "Submit via course portal"
+    }
+  ]
+}
