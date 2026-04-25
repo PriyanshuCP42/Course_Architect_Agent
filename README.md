@@ -143,15 +143,20 @@ Course_Architect_Agent/
 
 ---
 
-## 🛠️ Tech Stack Matrix
+## 🛠️ Technology Stack
 
-| Layer | Technology | Why? |
-|:---|:---|:---|
-| **Frontend** | [Streamlit](https://streamlit.io/) | Rapid prototyping of data-driven dashboards. |
-| **LLM Inference** | [Groq](https://groq.com/) | 500+ tokens/sec enables "instant" course generation. |
-| **Base Model** | [Llama 3.1 8B](https://llama.meta.com/) | State-of-the-art reasoning for curriculum planning. |
-| **Document Gen** | [FPDF2](https://github.com/py-pdf/fpdf2) | High-performance, lightweight PDF engine. |
-| **Styling** | [Google Fonts](https://fonts.google.com/) | Professional typography for premium feel. |
+<p align="left">
+  <img src="https://img.shields.io/badge/PYTHON-3.9+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/STREAMLIT-1.56-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"/>
+  <img src="https://img.shields.io/badge/GROQ-INFERENCE-F55036?style=flat-square" alt="Groq"/>
+  <img src="https://img.shields.io/badge/LLAMA_3.1-8B-0467DF?style=flat-square&logo=meta&logoColor=white" alt="Llama 3.1"/>
+  <img src="https://img.shields.io/badge/PDF-EXPORT-00599C?style=flat-square" alt="PDF Export"/>
+</p>
+
+- **Inference Engine:** Sub-second response times using Groq's LPU architecture.
+- **Frontend Logic:** Reactive state management via Streamlit session states.
+- **Agent Coordination:** Hierarchical state propagation through JSON schema enforcement.
+- **Document Rendering:** Multi-threaded PDF generation with custom styling tokens.
 
 ---
 
