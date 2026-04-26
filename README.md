@@ -64,7 +64,6 @@ graph TD
     F --> G
     G --> H["📊 Streamlit Dashboard"]
     G --> I["📄 Professional PDF Export"]
-    G --> J["🖼️ PPTX Slide Generator"]
 ```
 
 ### 🧠 Design Patterns
