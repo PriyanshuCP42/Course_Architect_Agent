@@ -199,17 +199,20 @@ def design_projects(curriculum: dict) -> list:
     response = ask_llm_json(system_prompt, user_prompt)
     return response.get("projects", [])
 
-def build_complete_course(raw_notes: str, target_audience: str, course_duration: str, class_size: str, desired_outcomes: str, engaging_materials: str) -> dict:
+def build_complete_course(raw_notes: str, target_audience: str, course_duration: str, class_size: str, desired_outcomes: str, engaging_materials: str, progress_callback=None) -> dict:
     # Truncate raw notes to roughly 1500 tokens (6000 chars) to aggressively stay under the 6000 TPM limit
     if len(raw_notes) > 6000:
         raw_notes = raw_notes[:6000] + "... [Content truncated to meet API rate limits]"
 
     # 1. Build Curriculum structure
+    if progress_callback: progress_callback("🏗️ Architecting curriculum structure...")
     curriculum = build_curriculum(raw_notes, target_audience, course_duration, class_size, desired_outcomes, engaging_materials)
     
     # 2. Generate Lesson Content ITERATIVELY per module to avoid LLM laziness
+    if progress_callback: progress_callback("📖 Writing detailed lesson content...")
     if "modules" in curriculum:
-        for module in curriculum["modules"]:
+        for i, module in enumerate(curriculum["modules"]):
+            if progress_callback: progress_callback(f"📖 Writing content for Module {i+1}: {module.get('title', '')}...")
             enriched_lessons = generate_module_content(
                 module.get("title", ""),
                 module.get("lessons", []),
@@ -223,6 +226,7 @@ def build_complete_course(raw_notes: str, target_audience: str, course_duration:
                         l["content"] = el.get("content", {})
 
     # 3. Create Assessments (Use a lightweight curriculum to save tokens!)
+    if progress_callback: progress_callback("🧪 Engineering assessments and quizzes...")
     import copy
     light_curriculum = copy.deepcopy(curriculum)
     for m in light_curriculum.get("modules", []):
@@ -244,6 +248,7 @@ def build_complete_course(raw_notes: str, target_audience: str, course_duration:
     assessments["total_questions"] = t_q
     
     # 4. Design Projects
+    if progress_callback: progress_callback("🏆 Designing capstone projects and rubrics...")
     projects = design_projects(light_curriculum)
     
     return {

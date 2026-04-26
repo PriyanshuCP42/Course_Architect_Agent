@@ -619,7 +619,11 @@ if run_button:
         st.session_state.is_complete = False
         st.session_state.course      = None
 
-        with st.spinner("Synthesizing curriculum structure..."):
+        progress_placeholder = st.empty()
+        def update_progress(text):
+            progress_placeholder.markdown(f"<div style='color: #D97757; font-weight: 500;'>{text}</div>", unsafe_allow_html=True)
+
+        with st.spinner("Synthesizing course materials..."):
             try:
                 result = build_complete_course(
                     raw_notes=raw_notes,
@@ -627,10 +631,12 @@ if run_button:
                     course_duration=course_duration,
                     class_size=class_size,
                     desired_outcomes=desired_outcomes,
-                    engaging_materials=engaging_materials
+                    engaging_materials=engaging_materials,
+                    progress_callback=update_progress
                 )
                 st.session_state.course      = result
                 st.session_state.is_complete = True
+                progress_placeholder.empty()
             except Exception as e:
                 st.error(f"Something went wrong. Please check your API key and try again. ({str(e)})")
             finally:
