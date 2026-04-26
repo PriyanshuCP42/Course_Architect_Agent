@@ -55,16 +55,16 @@ Course Architect uses a **Sequential State Propagation** pattern. Each agent rec
 
 ```mermaid
 graph TD
-    A[Raw Source Material] -->|Context Injection| B(🏗️ Curriculum Architect Agent)
-    B -->|Curriculum Map JSON| C(📖 Content Generator Agent)
-    C -->|Hydrated Curriculum| D{Parallel Orchestration}
-    D --> E(🧪 Assessment Engine Agent)
-    D --> F(🏆 Capstone Project Designer)
-    E --> G[Unified Course Object]
+    A["📝 Raw Source Material"] --> B["🏗️ Curriculum Architect Agent"]
+    B --> C["📖 Content Generator Agent"]
+    C --> D{"Parallel Processing"}
+    D --> E["🧪 Assessment Engine Agent"]
+    D --> F["🏆 Capstone Project Designer"]
+    E --> G["Unified Course Object"]
     F --> G
-    G --> H[📊 Streamlit Dashboard]
-    G --> I[📄 Professional PDF Export]
-    G --> J[🖼️ PPTX Slide Generator (Beta)]
+    G --> H["📊 Streamlit Dashboard"]
+    G --> I["📄 Professional PDF Export"]
+    G --> J["🖼️ PPTX Slide Generator"]
 ```
 
 ### 🧠 Design Patterns
