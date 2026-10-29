@@ -156,11 +156,6 @@ We welcome contributions to the agentic pipeline!
 
 ---
 
-## 📜 License
-
-Distributed under the **MIT License**. See `LICENSE` for more information.
-
----
 
 <div align="center">
   <p>Built with ❤️ by <strong>PriyanshuCP42</strong></p>
